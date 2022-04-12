@@ -39,7 +39,7 @@ class Pricefilter extends Action
     protected $storeModelInterface;
 
     public function __construct(
-        \Magento\Store\Model\StoreManagerInterface  $storeModelInterface,
+        StoreManagerInterface  $storeModelInterface,
         StoreRepositoryInterface                    $storeRepository,
         \Magento\Framework\Stdlib\DateTime\DateTime $dateTime,
         TimezoneInterface                           $timezoneInterface,
@@ -94,6 +94,7 @@ class Pricefilter extends Action
                  */
                     if (floor($minutes) <= 15) {
 //-----------------------------------------------------------------------------
+//--------------------------------------------------------------------------
                         $products->getCustomAttribute('price_filter');
                         $PriceFilterValue = $products->getPriceFilter();
                         // echo $PriceFilterValue;
