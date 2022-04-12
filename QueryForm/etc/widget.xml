@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:queryform:Magento_Widget:etc/widget.xsd">
+    <widget class="Codilar\QueryForm\Block\Widget\Posts" id="queryform_posts">
+        <label>QureyForm Widget</label>
+        <description>QureyForm Posts</description>
+    </widget>
+</widgets>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+<table name = "query" resource="default" engine="innodb" comment="table to store queries information">
+    <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true" comment="queries ID"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="20"
+        comment="customer Name"/>
+    <column xsi:type="varchar" name="email" nullable="false" length="50"
+        comment="email id"/>
+    <column xsi:type="varchar" name="phoneno" nullable="false" length="15"  comment="PhoneNo"/>
+    <column xsi:type="varchar" name="whatsapp" nullable="false" length="40"  comment="whatsapp"/>
+    <column xsi:type="int" name="pincode" nullable="false" padding="20"  comment="PinCode"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+
+</table>
+</schema>
